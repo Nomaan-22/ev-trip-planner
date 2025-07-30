@@ -1,0 +1,102 @@
+/* Mapview.css */
+
+/* Reset any default margins/padding that might affect the map */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure the map container takes full space */
+.leaflet-container {
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;   /* Full viewport width */
+  position: relative;
+  z-index: 0;
+}
+
+/* Remove any default Leaflet margins */
+.leaflet-control-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Ensure popup content is readable */
+.leaflet-popup-content {
+  margin: 10px;
+  line-height: 1.4;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.leaflet-popup-content strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Fix for any potential overflow issues */
+.leaflet-map-pane {
+  z-index: 1;
+}
+
+/* Ensure the info panel doesn't cause overflow */
+.leaflet-top.leaflet-right {
+  z-index: 1000;
+}
+
+/* Additional fixes for full-screen map */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Make sure the map's parent containers are also full height */
+#root,
+.h-full,
+.w-full {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix for the MapPage container */
+.h-screen {
+  height: 100vh !important;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  height: calc(100vh - 80px); /* Adjust based on your header height */
+  overflow: hidden;
+}
+
+/* Ensure the map fills its container properly */
+.relative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fix any z-index issues with the info panel */
+.z-
+$$
+1000
+$$ {
+  z-index: 1000 !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .leaflet-popup-content {
+    max-width: 250px;
+    font-size: 14px;
+  }
+  
+  /* Adjust info panel for mobile */
+  .absolute.top-4.right-4 {
+    top: 10px;
+    right: 10px;
+    max-width: 150px;
+  }
+}
