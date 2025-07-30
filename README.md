@@ -2,9 +2,8 @@
 
 A smart, full-stack web application designed to help electric vehicle owners in India plan long-distance journeys with confidence by calculating optimal routes and identifying necessary charging stops.
 
-![EV Trip Planner Screenshot](<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/cd8ac376-5452-4ac9-b51d-b923e2950fbb" />
+![EV Trip Planner Screenshot](<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/Nomaan-22/ev-trip-planner/issues/1#issue-3277971693" />
 ) 
-*(Suggestion: Replace this placeholder with a screenshot of a successfully planned trip, like the final Delhi-Jammu route)*
 
 ---
 
